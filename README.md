@@ -4,9 +4,6 @@ This project is a basic **Bank Account Management System** implemented in C++. I
 
 ## Table of Contents
 - [Features](#features)
-- [Class Structure](#class-structure)
-  - [Node Class](#node-class)
-  - [Bank Class](#bank-class)
 - [Functions](#functions)
   - [Public Functions](#public-functions)
 - [Installation](#installation)
@@ -22,23 +19,6 @@ This project is a basic **Bank Account Management System** implemented in C++. I
 - **Fund Transfer**: Facilitates money transfers between accounts.
 - **Account Search**: Searches for an account by its ID.
 - **Loan Application**: Checks loan eligibility based on financial criteria.
-
----
-
-## Class Structure
-
-### Node Class
-The `node` class represents an individual bank account. Each `node` (or account) contains:
-- **val**: A float value representing the bank account balance.
-- **cash**: Current cash balance of the account.
-- **name**: Name of the account holder.
-- **id**: Unique identifier for the account.
-- **next**: Pointer to the next node (account) in the linked list.
-
-### Bank Class
-The `bank` class manages the entire linked list of bank accounts. It includes:
-- **head**: Private pointer to the first node in the linked list.
-- **length**: Public integer tracking the number of accounts.
 
 ---
 
@@ -64,3 +44,10 @@ The `bank` class manages the entire linked list of bank accounts. It includes:
    ```bash
    git clone https://github.com/yourusername/BankAccountManagementSystem.git
    cd BankAccountManagementSystem
+
+2. Compile the code using a C++ compiler:
+   ```bash
+    g++ -o bank_system bank_system.cpp
+3. Run the program:
+   ```
+   bash ./bank_system
